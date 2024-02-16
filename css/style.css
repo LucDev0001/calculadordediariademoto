@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+:root{
+    --corprincipal: #12372A;
+    --itens:#ADBC9F;
+    --corfont:#FBFADA;
+
+}
+
+body{
+    padding: 2%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: border-box;
+    background-color:var(--corprincipal);
+    color: var(--corfont);
+    font-family: "Lato", sans-serif;
+    
+}
+
+.container1{
+    background-color: var(--itens);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+
+.container2{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width:20%;
+    border-radius: 20px;
+    background-color: var(--itens);
+    
+    
+}
+
+.container3{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:20%;
+    background-color: var(--itens);
+    border-radius: 20px;
+}
+
+.container3 input{
+    border:none;
+    height: 30px;
+}
+
+.semana{
+    width:inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    
+
+    
+    
+}
+
+.soma{
+    margin:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+   
+    
+}
+
+.adv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.adv img{
+    width: 20px;
+    margin: 2px;
+
+}
+
+
+::placeholder{
+    padding:1%;
+    text-align: center;
+
+}
+
+input{
+    width:80px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+
+    margin: 5px;
+}
+
+
+
+
+
+.valor{
+    line-height: 60px;
+    border-radius: 20px;
+    padding:2%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+footer{
+    
+    display: flex;
+    position:absolute;
+    top:96%;
+   
+   
+}
+
+
+@media screen and (max-width:1051px) {
+
+    body{
+        padding: 2%;
+        flex-direction: column;
+    }
+
+    .container1{
+        padding: 1%;
+        width: 100%;
+        
+    }
+    
+    .container2{
+        
+        width: 100%;
+    }
+    .container3{
+        
+        width: 100%;
+
+    }
+        
+    .semana{
+        padding: 2%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    input{
+        width:20%;
+    }
+
+    footer{
+        position: relative;
+        top: 1%;
+        font-size: 0.8rem;
+        
+    }
+}
