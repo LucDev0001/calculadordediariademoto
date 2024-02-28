@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons8-scooter-32.png" type="image/x-icon">
+    <title>Calcular-Diaria</title>
+</head>
+<body>
+
+<main class="tela-inicial">
+
+    <section class="tela-inicial-conteudo">
+        <h1>Olá Seja bem vindo ! Calcule Seus Ganhos <strong>Aqui</strong></h1>
+        <div class="tela-inicial-valores">
+            <label for="diariaatual">Digite O valor Da Sua Diaria</label>
+            <input type="number" name="diaria" id="diariaatual" placeholder="R$">
+            <label for="taxaatual">Digite  o valor da Sua taxa ! </label>
+            <input type="number" name="taxa" id="taxaatual" placeholder="R$">
+            <button onclick="mostrarValores()" id="mostrarBotao" title="Só Ativa Quando os Valores Forem Preenchidos" disabled>Mostrar Valores</button>
+        </div>
+    </section>
+
+    <img class="imagem-moto" src="img/3333449.jpg" alt="">
+
+</main>
+
+
+<section class="tela-de-valores-calculados">
+
+    <h1>Preencha a Quantidade de Entregas Feitas em cada dia da semana</h1>
+    
+
+    <div>
+        <input type="number" name="seg" id="seg" placeholder="Segunda">
+        <input type="number" name="ter" id="ter" placeholder="Terça">
+        <input type="number" name="qua" id="qua" placeholder="Quarta">
+        <input type="number" name="qui" id="qui" placeholder="Quinta">
+        <input type="number" name="sex" id="sex" placeholder="Sexta">
+        <input type="number" name="sab" id="sab" placeholder="Sábado">
+        <input type="number" name="dom" id="dom" placeholder="Domingo">
+    </div>
+
+    <div class="tela-valores-qtd-entregas">
+        <h1>Valor total das Taxas em R$</h1>
+        <input type="number" name="valortotaltaxa" id="valortotaltaxa" placeholder="R$" readonly>
+    </div>
+
+    <div class="valores-a-receber-entregas">
+        <h1>Valores a receber R$ <strong>Taxa + Diaria </strong></h1>
+        <input type="number" name="valortotal" id="valortotal" placeholder="R$" readonly>
+    </div>
+
+    
+    <div class="valor-extra">
+        <label for="valorExtra">Adicionar valor extra:</label>
+        <input title="Adicione Valores Extras Como entregas com valor maior que o valor inicial" type="number" id="valorExtra" placeholder="R$" oninput="this.value = Math.abs(this.value)">
+        <button onclick="adicionarValorExtra()">Adicionar valor extra</button>
+    </div>
+</section>
+
+
+
+
+
+<footer>
+    <h1> Todos os Direitos Reservados Luciano S Santos &#169 2024 </h1>
+</footer>
+   
+<script src="js/script.js">
+
+
+    
+
+        
+</script>
+
+
+    
+</body>
+</html>
